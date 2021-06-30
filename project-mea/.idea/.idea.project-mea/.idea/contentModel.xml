@@ -8,6 +8,7 @@
       <e p="Assets" t="Include">
         <e p="Scripts" t="Include">
           <e p="CameraMovement.cs" t="Include" />
+          <e p="Node.cs" t="Include" />
           <e p="WorldGEnerator.cs" t="Include" />
         </e>
       </e>

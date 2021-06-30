@@ -199,6 +199,7 @@ MonoBehaviour:
   size: 100
   node: {fileID: 1077662927451758431, guid: c1fcd57ba5029124387cbe283ed2eea3, type: 3}
   goNodes: {fileID: 224996950}
+  timeToGenerate: 5
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -369,7 +370,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
   m_LocalRotation: {x: 0.38268343, y: 0, z: 0, w: 0.92387956}
-  m_LocalPosition: {x: 0, y: 10, z: 0}
+  m_LocalPosition: {x: 0, y: 80, z: -59.999996}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1202908547}
@@ -424,13 +425,13 @@ MonoBehaviour:
   maximalZoom: 80
   normalSpeed: 0.5
   fastSpeed: 3
-  movementSpeed: 1
+  movementSpeed: 0.5
   movementTime: 5
   rotationAmount: 1
   zoomAmount: {x: 0, y: -10, z: 10}
-  newPosition: {x: 51.23804, y: 0, z: 49.127956}
-  newRotation: {x: 0, y: 0.44619748, z: 0, w: 0.8949338}
-  newZoom: {x: 0, y: 10, z: -10}
+  newPosition: {x: 23, y: 0, z: 23}
+  newRotation: {x: 0, y: 0.38268343, z: 0, w: 0.92387956}
+  newZoom: {x: 0, y: 80, z: -70}
   dragStartPosition: {x: 0, y: 0, z: 0}
   dragCurrentPosition: {x: 0, y: 0, z: 0}
   rotateStartPosition: {x: 0, y: 0, z: 0}

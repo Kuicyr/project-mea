@@ -5,21 +5,15 @@ using UnityEngine;
 public class Node : MonoBehaviour
 {
     public int type;
+    public GameObject[] gameObjects;
     
     public void ShowType()
     {
-        switch (type)
+        foreach (var o in gameObjects)
         {
-            case 0:
-            {
-                GetComponent<MeshRenderer>().material.color = Color.green;
-                break;
-            }
-            case 1:
-            {
-                GetComponent<MeshRenderer>().material.color = Color.blue;
-                break;
-            }
+            o.SetActive(false);
         }
+        
+        gameObjects[type].SetActive(true);
     }
 }

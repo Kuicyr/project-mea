@@ -29,24 +29,36 @@ public class WorldGenerator : MonoBehaviour
             }
         }
 
-        GenerateLake(0.12f);
-        
+        GenerateLake(0.12f, 2);
+        GenerateLake(0.03f, 1);
+        GenerateLake(0.03f, 1);
+        GenerateLake(0.03f, 1);
+        GenerateLake(0.03f, 1);
+        GenerateLake(0.03f, 1);
+        GenerateLake(0.03f, 1);
+        GenerateLake(0.03f, 2);
     }
 
-    private void GenerateLake(float lakePercent)
+    private void GenerateLake(float lakePercent, int type)
     {
         List<Vector2> queue = new List<Vector2>();
-        queue.Add(new Vector2(Random.Range(0, size), Random.Range(0, size)));
+        var startPosition = new Vector2(Random.Range(1, size-1), Random.Range(1, size-1));
+        while (world[(int) startPosition.x, (int) startPosition.y] != 0)
+        {
+            startPosition = new Vector2(Random.Range(1, size-1), Random.Range(1, size-1));
+        }
+
+        queue.Add(startPosition);
         var counter = 0;
         while (queue.Count > 0)
         {
             var position = Random.Range(0, queue.Count);
-            
+
             var x = (int) queue[position].x;
             var y = (int) queue[position].y;
             if (world[x, y] == 0)
             {
-                world[x, y] = 1;
+                world[x, y] = type;
                 counter++;
                 if (x != 0 && y != 0 && x != size - 1 && y != size - 1)
                 {

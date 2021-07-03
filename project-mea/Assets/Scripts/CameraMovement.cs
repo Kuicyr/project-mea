@@ -129,11 +129,11 @@ public class CameraMovement : MonoBehaviour
       }
     }
 
-    if (Input.GetMouseButtonDown(2))
+    if (Input.GetMouseButtonDown(1))
     {
       rotateStartPosition = Input.mousePosition;
     }
-    if (Input.GetMouseButton(2))
+    if (Input.GetMouseButton(1))
     {
       rotateCurrentPosition = Input.mousePosition;
 

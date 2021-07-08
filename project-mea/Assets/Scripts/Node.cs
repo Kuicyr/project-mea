@@ -35,7 +35,16 @@ public class Node : MonoBehaviour
 
             onBlock.transform.SetParent(transform);
         }
-        else
+        else if (type == 4)
+        {
+            current = Instantiate(gameObjects[1], transform.position, Quaternion.identity);
+            onBlock = Instantiate(gameObjects[4],
+                new Vector3(transform.position.x, transform.position.y + 0.5f, transform.position.z),
+                 Quaternion.identity);
+                onBlock.GetComponent<MyRock>().Randomize();
+
+            onBlock.transform.SetParent(transform);
+        }else
         {
             current = Instantiate(gameObjects[type], transform.position, Quaternion.identity);
             if (type == 2)

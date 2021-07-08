@@ -35,10 +35,15 @@ public class WorldGenerator : MonoBehaviour
 
         GenerateTerrain(0.12f, 2, 0, 0);
         GenerateTerrain(0.03f, 1, 0.2f, 3);
-        GenerateTerrain(0.03f, 1, 0.2f, 3);
-        GenerateTerrain(0.03f, 1, 0.2f, 3);
-        GenerateTerrain(0.03f, 1, 0.2f, 3);
-        GenerateTerrain(0.03f, 1, 0.2f, 3);
+        GenerateTerrain(0.005f, 1, 0.3f, 4);
+        GenerateTerrain(0.005f, 1, 0.3f, 4);
+        GenerateTerrain(0.005f, 1, 0.3f, 4);
+        GenerateTerrain(0.005f, 1, 0.3f, 4);
+        GenerateTerrain(0.005f, 1, 0.3f, 4);
+        GenerateTerrain(0.005f, 1, 0.3f, 4);
+      //  GenerateTerrain(0.03f, 1, 0.2f, 3);
+      //  GenerateTerrain(0.03f, 1, 0.2f, 3);
+      //  GenerateTerrain(0.03f, 1, 0.2f, 3);
         // GenerateTerrain(0.02f, 2, 0, 0);
        
 
